@@ -10,7 +10,7 @@ namespace GrpcClient
         static async Task Main(string[] args)
         {
             // Conectando ao servidor (substitua pelo IP público do servidor, se necessário)
-            var channel = GrpcChannel.ForAddress("http://localhost:50051");
+            var channel = GrpcChannel.ForAddress("http://54.163.212.167:50051");
 
             // Criar o cliente gRPC
             var client = new Calculator.Calculator.CalculatorClient(channel);
